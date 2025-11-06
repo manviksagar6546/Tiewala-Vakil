@@ -1,4 +1,7 @@
 
+import LegalHeritage from '@/components/Legal Heritage/LegalHeritage';
+import StatsSection from '@/components/Scores/StatsSection';
+import WhyChoose from '@/components/Why Choose/WhyChooseTiewalaVakil';
 import React from 'react';
 
 const TeamMemberCard: React.FC<{ imageUrl: string; name: string; title: string; }> = ({ imageUrl, name, title }) => (
@@ -18,11 +21,11 @@ const About: React.FC = () => {
             <section className="bg-brand-secondary py-20 text-white text-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-4xl md:text-5xl font-serif font-extrabold">About Tiewala Vakil</h1>
-                    <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">A Legacy of Legal Excellence and Client Dedication</p>
+                    <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">Three generations of legal excellence serving property law needs with dedication, expertise, and unwavering commitment to our clients across Hapur and beyond.</p>
                 </div>
             </section>
 
-            {/* Our Story Section */}
+            {/* Our Story Section
             <section className="py-16 sm:py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
@@ -40,10 +43,19 @@ const About: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Meet Our Team Section */}
-            <section className="py-16 sm:py-24 bg-brand-light">
+
+
+            <StatsSection />
+
+            <LegalHeritage />
+
+            <WhyChoose />
+
+
+            {/* <section className="py-16 sm:py-24 bg-brand-light">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-brand-primary">Meet Our Team</h2>
@@ -56,7 +68,7 @@ const About: React.FC = () => {
                         <TeamMemberCard imageUrl="https://picsum.photos/200/200?image=64" name="Ananya Gupta" title="Associate, Family Law" />
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };

@@ -1,0 +1,64 @@
+  .practice-areas-section {
+    padding: 4rem 0;
+    background-color: var(--brand-light);
+
+    @media (min-width: 640px) {
+      padding: 6rem 0;
+    }
+
+    .section-content {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+
+      @media (min-width: 640px) {
+        padding: 0 1.5rem;
+      }
+
+      @media (min-width: 1024px) {
+        padding: 0 2rem;
+      }
+    }
+
+    .section-header {
+      text-align: center;
+
+      h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-family: var(--font-serif);
+        font-weight: 700;
+        color: var(--brand-primary);
+
+        @media (min-width: 640px) {
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+        }
+      }
+
+      p {
+        margin-top: 1rem;
+        max-width: 42rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        color: #4b5563;
+      }
+    }
+    
+    .cards-grid {
+      margin-top: 3rem;
+      display: grid;
+      gap: 2rem;
+      color: #c09a58;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
