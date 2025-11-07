@@ -1,4 +1,5 @@
 
+import CallToAction from '@/components/Call To Action/CallToAction';
 import React, { useState } from 'react';
 
 const Contact: React.FC = () => {
@@ -22,8 +23,8 @@ const Contact: React.FC = () => {
             {/* Page Header */}
             <section className="bg-brand-secondary py-20 text-white text-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-4xl md:text-5xl font-serif font-extrabold">Get In Touch</h1>
-                    <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">We're here to help. Reach out to us for a consultation or any legal inquiries.</p>
+                    <h1 className="text-4xl md:text-5xl font-serif font-extrabold">Contact Us</h1>
+                    <p className="mt-4 text-lg text-gray-300 max-w-3xl mx-auto">Get in touch with our legal experts for property law consultation and documentation services.</p>
                 </div>
             </section>
 
@@ -66,11 +67,11 @@ const Contact: React.FC = () => {
                                 <div className="mt-4 space-y-4 text-lg text-gray-600">
                                   <p className="flex items-start">
                                       <span className="mt-1 mr-4 h-5 w-5 text-brand-accent">📍</span>
-                                      <span>123 Legal Ave, Suite 400<br/>New Delhi, India 110001</span>
+                                      <span>Chamber no. 4, Tehsil Compound<br/>Hapur - 245101, Uttar Pradesh</span>
                                   </p>
                                   <p className="flex items-center">
                                       <span className="mr-4 h-5 w-5 text-brand-accent">📞</span>
-                                      <a href="tel:+911234567890" className="hover:text-brand-accent">+91 12345 67890</a>
+                                      <a href="tel:+91-7037455191" className="hover:text-brand-accent">+91-7037455191</a>
                                   </p>
                                   <p className="flex items-center">
                                       <span className="mr-4 h-5 w-5 text-brand-accent">✉️</span>
@@ -79,20 +80,22 @@ const Contact: React.FC = () => {
                                 </div>
                             </div>
                              <div>
-                                <h3 className="text-xl font-bold font-serif text-brand-primary">Business Hours</h3>
+                                <h3 className="text-xl font-bold font-serif text-brand-primary">Office Hours</h3>
                                 <div className="mt-4 space-y-2 text-lg text-gray-600">
-                                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                    <p>Saturday: 10:00 AM - 2:00 PM</p>
-                                    <p>Sunday: Closed</p>
+                                    <p>Mon - Sat: 10:00 AM - 6:00 PM</p>
+                                    {/* <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                    <p>Sunday: Closed</p> */}
                                 </div>
                             </div>
-                            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                            {/* <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
                                <img src="https://picsum.photos/600/400?image=980" alt="Map to office" className="w-full h-full object-cover"/>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </section>
+
+            <CallToAction />
         </div>
     );
 };

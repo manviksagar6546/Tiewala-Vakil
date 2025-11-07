@@ -24,7 +24,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link to="/">
-              <Logo />
+              <img src="/images/Tiewalalogo.png" alt="Tiewalalogo" className="h-20 w-auto md:h-28" />
             </Link>
           </div>
           <div className="hidden md:block">
