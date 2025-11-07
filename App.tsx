@@ -8,6 +8,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
+import Book from './pages/Book Consultation';
 import { useEffect } from 'react';
 
 const ScrollToTop = () => {
@@ -34,6 +35,8 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/Book Consultation" element={<Book />} />
+
           </Routes>
         </main>
         <Footer />

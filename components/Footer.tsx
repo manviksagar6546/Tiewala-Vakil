@@ -14,7 +14,7 @@ const SocialIcon: React.FC<{
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-600 text-white">
+    <footer style={{ backgroundColor: '#c09a58' }} >
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               trusted partner in law.
             </p>
             <div className="flex space-x-4">
-              <SocialIcon href="#" color="text-[#1877F2]">
+              <SocialIcon href="https://www.facebook.com/ajayshankarsharmatiewalavakil/" color="text-[#1877F2]">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                   />
                 </svg>
               </SocialIcon>
-              <SocialIcon href="#" color="text-[#E4405F]">
+              <SocialIcon href="https://www.instagram.com/ajayshankarsharma.tiewalavakil/" color="text-[#E4405F]">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                   />
                 </svg>
               </SocialIcon>
-              <SocialIcon href="#" color="text-[#FF0000]">
+              <SocialIcon href="https://www.youtube.com/@Tiewalavakil" color="text-[#FF0000]">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -136,15 +136,15 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <span className="mt-1 mr-3 h-5 w-5 text-blue-900">📍</span>
                 <span>
-                  123 Legal Ave, Suite 400
+                  Chamber no. 4, Tehsil Compound
                   <br />
-                  New Delhi, India 110001
+                  Hapur - 245101, Uttar Pradesh
                 </span>
               </li>
               <li className="flex items-center">
                 <span className="mr-3 h-5 w-5 text-blue-900">📞</span>
-                <a href="tel:+911234567890" className="hover:text-blue-700">
-                  +91 12345 67890
+                <a href="tel:+917037455191" className="hover:text-blue-700">
+                  +91-7037455191
                 </a>
               </li>
               <li className="flex items-center">

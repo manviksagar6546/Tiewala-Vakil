@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./OnlineConsultationSection.scss";
 
 const OnlineConsultationSection = () => {
@@ -14,7 +15,7 @@ const OnlineConsultationSection = () => {
               home. Choose phone, video, or WhatsApp consultation.
             </p>
 
-            <a href="/book-consultant" className="book-btn">
+            <Link to="/book consultation" className="book-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -29,15 +30,12 @@ const OnlineConsultationSection = () => {
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
               Book Your Session
-            </a>
+            </Link>
           </div>
 
           {/* Right Image */}
           <div className="image-content">
-            <img
-              src="/images/owner.png"
-              alt="Advocate Ajay Shankar Sharma"
-            />
+            <img src="/images/ownerji.png" alt="Advocate Ajay Shankar Sharma" />
           </div>
         </div>
       </div>
@@ -46,4 +44,3 @@ const OnlineConsultationSection = () => {
 };
 
 export default OnlineConsultationSection;
-

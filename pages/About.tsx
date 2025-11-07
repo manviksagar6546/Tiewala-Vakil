@@ -1,4 +1,5 @@
 
+import CallToAction from '@/components/Call To Action/CallToAction';
 import LegalHeritage from '@/components/Legal Heritage/LegalHeritage';
 import StatsSection from '@/components/Scores/StatsSection';
 import WhyChoose from '@/components/Why Choose/WhyChooseTiewalaVakil';
@@ -53,6 +54,8 @@ const About: React.FC = () => {
             <LegalHeritage />
 
             <WhyChoose />
+
+            <CallToAction />
 
 
             {/* <section className="py-16 sm:py-24 bg-brand-light">

@@ -40,8 +40,8 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="owner-image">
-         <img src="/images/owner.png" alt="Owner-Image" />
-            <div class="experience-badge">
+         <img src="/images/ownerji.png" alt="Owner-Image" />
+            <div className="experience-badge">
                 <h2>33+</h2>
                 <p>Years Experience</p>
             </div>

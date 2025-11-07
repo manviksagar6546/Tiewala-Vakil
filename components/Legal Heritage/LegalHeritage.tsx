@@ -44,7 +44,7 @@ const LegalHeritage = () => {
           {/* --- Person 3 --- */}
           <div className="member">
             <div className="photo border-primary">
-              <img src="/images/owner.png" alt="Advocate Ajay Shankar Sharma" />
+              <img src="/images/ownerji.png" alt="Advocate Ajay Shankar Sharma" />
             </div>
             <h3>Advocate Ajay Shankar Sharma</h3>
             <p className="role">Current Legal Expert</p>

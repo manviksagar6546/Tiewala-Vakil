@@ -47,7 +47,7 @@ const LegalTraditionSection = () => {
           <div className="member">
             <div className="photo border-primary">
               <img
-                src="/images/owner.png"
+                src="/images/ownerji.png"
                 alt="Advocate Ajay Shankar Sharma"
               />
             </div>
