@@ -68,7 +68,9 @@ $transition: all 0.3s ease;
       transition: $transition;
 
       &::placeholder {
-        color: lighten($text-muted, 10%);
+        // color: lighten($text-muted, 10%);
+        // color.adjust($color, $lightness: 10%)
+        color: #9ca3af;
       }
 
       &:focus {
