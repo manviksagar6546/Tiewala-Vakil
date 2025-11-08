@@ -66,27 +66,28 @@ const Contact: React.FC = () => {
 
     setFormStatus("Sending...");
 
-    // Replace these with your own EmailJS credentials
-    emailjs
-      .sendForm(
-        "service_nfdxcjf", // e.g. service_xxxxxxx
-        "template_f3xgdeh", // e.g. template_yyyyyyy
-        form.current,
-        "DJDOxM9hm6uA8R9CE" // e.g. KJdfj48dfD_d9
-      )
-      .then(
-        () => {
-          setFormStatus(
-            "✅ Thank you! Your message has been sent successfully."
-          );
-          form.current?.reset();
-          setErrors({});
-        },
-        (error) => {
-          console.error("EmailJS Error:", error);
-          setFormStatus("❌ Failed to send message. Please try again later.");
-        }
-      );
+    // Get EmailJS credentials from environment variables
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS credentials not found in environment variables");
+      setFormStatus("❌ Configuration error. Please contact support.");
+      return;
+    }
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      () => {
+        setFormStatus("✅ Thank you! Your message has been sent successfully.");
+        form.current?.reset();
+        setErrors({});
+      },
+      (error) => {
+        console.error("EmailJS Error:", error);
+        setFormStatus("❌ Failed to send message. Please try again later.");
+      }
+    );
   };
 
   return (
