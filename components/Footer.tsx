@@ -153,7 +153,7 @@ const Footer: React.FC = () => {
                   href="mailto:contact@tiewalavakil.in"
                   className="hover:text-blue-700"
                 >
-                  contact@tiewalavakil.in
+                  tiewalavakil@gmail.com
                 </a>
               </li>
             </ul>

@@ -11,6 +11,10 @@ import TestimonialsCarousel from '../../components/Clients reviews/ClientsSay';
 import Newsletter from '../../components/Stay Updated/Latestupdates';
 import FAQ from '../../components/Frequently Asked Questions/FAQ';
 import PracticeAreasSection from '@/components/PracticeAreaSection/PracticeAreas';
+import HomeHeroSection from '@/components/Home-HeroSection/HomeHeroSection';
+
+
+
 
 
 
@@ -34,38 +38,45 @@ const WhyChooseUsItem: React.FC<{ icon: React.ReactNode; title: string; descript
   </div>
 );
 
+// const Home: React.FC = () => {
+//   return (
+//     <div className="home-container">
+//       {/* Hero Section */}
+//       <section className="hero-section">
+//         <div className="owner-image">
+//          <img src="/images/ownerji.png" alt="Owner-Image" />
+//             <div className="experience-badge">
+//                 <h2>33+</h2>
+//                 <p>Years Experience</p>
+//             </div>
+//         </div>
+//         <div 
+//           className="hero-bg"
+//           //style={{ backgroundImage: "url('https://picsum.photos/1600/900?grayscale&blur=2')" }}
+//         ></div>
+//         <div className="hero-content">
+
+//           <h1>
+//             Trusted Legal Services for Property Matters
+//           </h1>
+//           <p>
+//             With over 75 years of heritage, we provide expert legal consultation, documentation, and registration services from our Hapur office.
+//           </p>
+//           <div className="cta-container">
+//             <CTAButton />
+//             <Link to="/about" className="secondary-cta">
+//               Learn More About Us
+//             </Link>
+//           </div>
+//         </div>
+//       </section>/
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="owner-image">
-         <img src="/images/ownerji.png" alt="Owner-Image" />
-            <div className="experience-badge">
-                <h2>33+</h2>
-                <p>Years Experience</p>
-            </div>
-        </div>
-        <div 
-          className="hero-bg"
-          //style={{ backgroundImage: "url('https://picsum.photos/1600/900?grayscale&blur=2')" }}
-        ></div>
-        <div className="hero-content">
-
-          <h1>
-            Trusted Legal Services for Property Matters
-          </h1>
-          <p>
-            With over 75 years of heritage, we provide expert legal consultation, documentation, and registration services from our Hapur office.
-          </p>
-          <div className="cta-container">
-            <CTAButton />
-            <Link to="/about" className="secondary-cta">
-              Learn More About Us
-            </Link>
-          </div>
-        </div>
-      </section>
+      
+      {/* ...rest of your sections */}
+      <HomeHeroSection />
+      
 
       {/* Practice Areas Section
       <section className="practice-areas-section">

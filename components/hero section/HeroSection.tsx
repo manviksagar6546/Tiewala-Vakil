@@ -8,9 +8,9 @@ const HeroSection = () => {
         <h1 className="hero-title">
           Tiewalavakil – Trusted Legal Document Services in Hapur
         </h1>
-        <p className="hero-subtitle">
+        {/* <p className="hero-subtitle">
           Tiewalavakil provides reliable, affordable, and professional legal documentation and registration services in Hapur. We specialize in property-related deeds, family documentation, and legal advisory, all tailored to local requirements and legal standards. Our team of experienced legal professionals ensures that your documents are drafted with clarity and registered on time.
-        </p>
+        </p> */}
 
         <div className="hero-buttons">
           <a href="/book-consultant">

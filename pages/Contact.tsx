@@ -232,7 +232,7 @@ const Contact: React.FC = () => {
                       href="mailto:contact@tiewalavakil.in"
                       className="hover:text-brand-accent"
                     >
-                      contact@tiewalavakil.in
+                      tiewalavakil@gmail.com
                     </a>
                   </p>
                 </div>
