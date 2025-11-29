@@ -1,15 +1,14 @@
-
-import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Blogs from './pages/Blogs';
-import Contact from './pages/Contact';
-import Book from './pages/Book Consultation';
-import { useEffect } from 'react';
+import React from "react";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Book from "./pages/Book Consultation";
+import { useEffect } from "react";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -20,7 +19,6 @@ const ScrollToTop = () => {
 
   return null;
 };
-
 
 const App: React.FC = () => {
   return (
@@ -36,7 +34,6 @@ const App: React.FC = () => {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Book Consultation" element={<Book />} />
-
           </Routes>
         </main>
         <Footer />

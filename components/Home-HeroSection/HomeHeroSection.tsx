@@ -4,7 +4,6 @@ import * as THREE from "three";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import CTAButton from "@/components/CTAButton";
-import ownerji from "@/assets/ownerji.png";
 const HomeHeroSection: React.FC = () => {
   const [vantaEffect, setVantaEffect] = useState<any>(null);
   const vantaRef = useRef<HTMLDivElement>(null);
@@ -34,7 +33,7 @@ const HomeHeroSection: React.FC = () => {
       className="relative overflow-hidden flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-24 min-h-[90vh] text-gray-800"
     >
       {/* Content */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -74,21 +73,21 @@ const HomeHeroSection: React.FC = () => {
             Learn More About Us
           </Link>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
 
       {/* Hero Image */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
         className="z-10 mt-10 lg:mt-0"
       >
         <img
-          src= "/images/ownerji.png"
+          src="/images/ownerji.png"
           alt="Law Firm Hero"
           className="w-[300px] sm:w-[400px] lg:w-[500px] drop-shadow-2xl rounded-2xl"
         />
-      </motion.div>
+      </motion.div> */}
 
       {/* Decorative Glows */}
       <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-gradient-to-r from-blue-300 to-transparent rounded-full blur-[100px] animate-pulse opacity-70"></div>
