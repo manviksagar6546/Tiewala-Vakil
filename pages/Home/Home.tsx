@@ -8,7 +8,7 @@ import TestimonialsCarousel from "../../components/Clients reviews/ClientsSay";
 import Newsletter from "../../components/Stay Updated/Latestupdates";
 import FAQ from "../../components/Frequently Asked Questions/FAQ";
 import PracticeAreasSection from "@/components/PracticeAreaSection/PracticeAreas";
-import HomeHeroSection from "@/components/Home-HeroSection/HomeHeroSection";
+import HomeHeroSection from "@/components/HomeHeroSection/HomeHeroSection";
 
 const Home: React.FC = () => {
   return (

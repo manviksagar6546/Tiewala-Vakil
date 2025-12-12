@@ -48,7 +48,7 @@ const HomeHeroSection: React.FC = () => {
           Trusted Legal Services for Property Matters
         </motion.h1>
 
-        <motion.p
+       /* <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -88,6 +88,8 @@ const HomeHeroSection: React.FC = () => {
           className="w-[300px] sm:w-[400px] lg:w-[500px] drop-shadow-2xl rounded-2xl"
         />
       </motion.div> */}
+      
+      
 
       {/* Decorative Glows */}
       <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-gradient-to-r from-blue-300 to-transparent rounded-full blur-[100px] animate-pulse opacity-70"></div>
